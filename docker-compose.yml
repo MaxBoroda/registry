@@ -23,5 +23,5 @@ services:
 
 networks:
   test:
-    external:
+    overlay:
       name: test
