@@ -7,9 +7,9 @@ services:
       image: registry:2
       ports:
         - 5000:5000
-      hostname: "registry"
-          networks:
-            - test
+#      hostname: "registry"
+      networks:
+        - test
       environment:
           REGISTRY_HTTP_TLS_CERTIFICATE: /certs/ssl_certificate.cer
           REGISTRY_HTTP_TLS_KEY: /certs/sprinklebit.com.key
