@@ -17,3 +17,10 @@ services:
         - ./data:/var/lib/registry
         - ./auth:/auth
         - ./certs:/certs
+      hostname: "registry"
+          networks:
+            - test
+networks:
+  test:
+    external:
+      name: test
